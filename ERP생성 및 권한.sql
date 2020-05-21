@@ -1,0 +1,21 @@
+--사용자이름c##안주고 생성하기
+ALTER SESSION SET "_ORACLE _SCRIPT"=TRUE;
+
+--사용자 생성
+CREATE USER 사용자명 IDENTIFIED BY 비번;
+
+--데이터베이스 생성권한 주기
+GRANT CREATE SESSION TO 사용자명;
+
+--테이블관련 기능사용 권한주기
+GRANT CREATE TABLESPACE TO 사용자명;
+GRANT CREATE TABLE TO 사용자명;
+GRANT CREATE SEQUENCE TO 사용자명;
+GRANT CREATE VIEW TO 사용자명;
+GRANT CREATE SYNONYM TO 사용자명;
+
+--항목들에 대한 권한을 사용자에게 부여하기(DBA는 강력권한)
+GRANT RESOURCE, CONNECT, UNLIMITED TABLESPACE TO 사용자명;
+GRANT DBA TO 사용자명;
+
+
