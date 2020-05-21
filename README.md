@@ -1,9 +1,9 @@
 # ERP 시스템
 
 *UI 구성
--로그인
--회원가입
--사용자 UI(Kiosk)와 관리자 UI(ERP System)
+- 로그인
+- 회원가입
+- 사용자 UI(Kiosk)와 관리자 UI(ERP System)
 
 
 *프로젝트 컨셉
